@@ -3,6 +3,7 @@ import App from './App';
 
 test('renders learn react link', () => {
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
+  // update test from regEx to literal string
+  const linkElement = screen.getByText('Learn React');
   expect(linkElement).toBeInTheDocument();
 });
